@@ -1,7 +1,15 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import BigCalendar from 'react-big-calendar';
+import 'react-big-calendar/lib/css/react-big-calendar.css';
+import moment from 'moment';
+
+// import eventData from './data/events.json';
+import eventData from './data/sampleEvents';
 import './App.css';
-import eventData from './data/events.json';
+
+BigCalendar.setLocalizer(
+  BigCalendar.momentLocalizer(moment),
+);
 
 class App extends Component {
   constructor(props) {
@@ -14,13 +22,12 @@ class App extends Component {
   render() {
     return (
       <div className='App'>
-        <div className='App-header'>
-          <img src={logo} className='App-logo' alt='logo' />
-          <h2>Welcome to React</h2>
-        </div>
-        <p className='App-intro'>
-          {JSON.stringify(this.state.eventData)}
-        </p>
+        <BigCalendar
+          {...this.props}
+          events={this.state.eventData}
+          views={['day', 'month']}
+          defaultDate={new Date(2015, 3, 1)}
+        />
       </div>
     );
   }

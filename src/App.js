@@ -26,6 +26,15 @@ class App extends Component {
       mappedEvents: eventMapper(this.state.eventData, this.state.baseDate),
     });
   }
+  eventStyleGetter(event) {
+    const style = {
+      backgroundColor: event.hexColor,
+      borderColor: event.hexColor,
+    };
+    return {
+      style,
+    };
+  }
   render() {
     return (
       <div className='App'>
@@ -34,6 +43,7 @@ class App extends Component {
           events={this.state.mappedEvents}
           views={['day', 'month']}
           defaultDate={this.state.baseDate}
+          eventPropGetter={this.eventStyleGetter}
         />
       </div>
     );

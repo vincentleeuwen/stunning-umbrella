@@ -1,0 +1,18 @@
+[
+  {
+    "name": "Jeff",
+    "events" : [
+      {"year": "2017", "day": 0, "start": 60, "end": 120},
+      {"year": "2017", "day": 0, "start": 180, "end": 240},
+      {"year": "2017", "day": 0, "start": 360, "end": 420}
+    ]
+  },
+  {
+    "name": "Lucy",
+    "events" : [
+      {"year": "2017", "day": 0, "start": 0, "end": 60},
+      {"year": "2017", "day": 0, "start": 180, "end": 300},
+      {"year": "2017", "day": 0, "start": 360, "end": 375}
+    ]
+  }
+]

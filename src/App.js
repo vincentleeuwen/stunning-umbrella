@@ -41,7 +41,8 @@ class App extends Component {
         <BigCalendar
           {...this.props}
           events={this.state.mappedEvents}
-          views={['day', 'month']}
+          views={['day', 'week', 'month']}
+          defaultView='day'
           defaultDate={this.state.baseDate}
           eventPropGetter={this.eventStyleGetter}
         />

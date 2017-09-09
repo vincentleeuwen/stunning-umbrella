@@ -4,15 +4,22 @@ import './App.css';
 import eventData from './data/events.json';
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      eventData,
+    };
+  }
   render() {
     return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
+      <div className='App'>
+        <div className='App-header'>
+          <img src={logo} className='App-logo' alt='logo' />
           <h2>Welcome to React</h2>
         </div>
-        <p className="App-intro">
-          {JSON.stringify(eventData)}
+        <p className='App-intro'>
+          {JSON.stringify(this.state.eventData)}
         </p>
       </div>
     );

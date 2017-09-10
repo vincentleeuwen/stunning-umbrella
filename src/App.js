@@ -45,6 +45,8 @@ class App extends Component {
           defaultView='day'
           defaultDate={this.state.baseDate}
           eventPropGetter={this.eventStyleGetter}
+          min={moment().startOf('day').hours(9).toDate()}
+          max={moment().endOf('day').hours(21).toDate()}
         />
       </div>
     );

@@ -18,9 +18,17 @@
   {
     "name": "Vincent",
     "events" : [
-      {"year": "2017", "day": 0, "start": 60, "end": 200},
-      {"year": "2017", "day": 0, "start": 220, "end": 320},
+      {"year": "2017", "day": 1, "start": 60, "end": 200},
+      {"year": "2017", "day": 0, "start": 200, "end": 320},
       {"year": "2017", "day": 0, "start": 400, "end": 475}
+    ]
+  },
+  {
+    "name": "Jennifer",
+    "events" : [
+      {"year": "2017", "day": 0, "start": 300, "end": 420},
+      {"year": "2017", "day": 1, "start": 90, "end": 140},
+      {"year": "2017", "day": 1, "start": 180, "end": 300}
     ]
   }
 ]
